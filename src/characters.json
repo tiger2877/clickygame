@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "SpongeBob",
+    "image": "/images/spongebob.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mr. Krabs",
+    "image": "/images/mrkrabs.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Squidward",
+    "image": "/images/squidward.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Patrick",
+    "image": "/images/patrickstar.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sandy Cheeks",
+    "image": "/images/sandycheeks.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Sheldon J. Plankton",
+    "image": "/images/sheldonplankton.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Garythesnail",
+    "image": "/images/garythesmail.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Mrs. Puff",
+    "image": "/images/mrspuff.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Larythelobster",
+    "image": "/images/larythelobster.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Bubble Bass",
+    "image": "/images/bubblebass.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Betsy Krabs",
+    "image": "/images/betsykrabs.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Pearl Krabs",
+    "image": "/images/pearlkrabs.jpg"
+  }
+]

@@ -11,10 +11,11 @@ class App extends Component {
   };
 
   updateCharacter = id => {
-    // Filter this.state.characters for characters with an id not equal to the id being 
-    const characters = this.state.characters.filter(character => character.id !== id);
-    // Set this.state.characters equal to the new characters array
-    this.setState({ characters });
+    console.log(id);
+    // // Filter this.state.characters for characters with an id not equal to the id being 
+    // const characters = this.state.characters.filter(character => character.id !== id);
+    // // Set this.state.characters equal to the new characters array
+    // this.setState({ characters });
   };
 
   // Map over this.state.characters and render a CharacterCard component for each character object

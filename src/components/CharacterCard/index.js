@@ -3,7 +3,7 @@ import "./CharacterCard.css";
 
 const CharacterCard = props => (
   <div className="card">
-    <span onClick={() => props.updateCharacter(props.id)} className="update">
+  <span onClick={() => props.handleClick(props.id)} className="update">
       <img alt={props.image} src={props.image} />
     </span>
   </div>

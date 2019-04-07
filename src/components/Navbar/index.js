@@ -1,14 +1,19 @@
 import React from "react";
+import {Component} from "react";
 import "./style.css";
 
-function Navbar(props) {
-  return (
-    <nav class="navbar">
-    <div class="col-md-4">Clicky Game</div>
-    <div class="col-md-4">Click an image to begin!</div>
-    <div class="col-md-4 scores">Score: 0 | Top Score: 0</div>
-    </nav>
-);
+class Navbar extends Component {
+
+  render() {
+    return (
+      <nav class="navbar">
+        <div>{this.props.comment}</div>
+        <div> Score: {this.props.currentScore}</div>
+        <div>|</div>
+        <div>Total Score: {this.props.highScore}</div>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;

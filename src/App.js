@@ -15,19 +15,18 @@ class App extends Component {
     clickedImages: [],
     currentScore: 0,
     highScore: 0,
-    navFeedback: 'Click an image to start',
+    comment: 'Click an image to start',
   };
 
   resetGame = () => {
     this.setState(prevState => {
       const newSet = prevState.character;
       return {
-        // images: [images,images1][Math.round(Math.random())],
         cards: newSet,
         clickedImages: [],
         currentScore: 0,
         highScore: prevState.highScore,
-        navFeedback: 'Click an image to start',
+        comment: 'Click an image to start',
       };
     });
   };
@@ -41,11 +40,8 @@ class App extends Component {
           cards: sortedImages,
           clickedImages: [...prevState.clickedImages, id],
           currentScore: prevState.currentScore + 1,
-          highScore:
-            prevState.highScore < prevState.currentScore + 1
-              ? prevState.highScore + 1
-              : prevState.highScore,
-          navFeedback: 'Correct!',
+          highScore: prevState.highScore < prevState.currentScore + 1 ? prevState.highScore + 1 : prevState.highScore,
+          comment: 'Correct!',
         };
       } else {
         return {
@@ -53,7 +49,7 @@ class App extends Component {
           clickedImages: [],
           currentScore: 0,
           highScore: prevState.highScore,
-          navFeedback: 'Click an image to start',
+          comment: 'Click an image to start',
         };
       }
     });
@@ -62,9 +58,9 @@ class App extends Component {
   // Map over this.state.characters and render a CharacterCard component for each character object
   render() {
    console.log(this.props);
-   
+
     return (
-      
+
       <Wrapper>
         {this.state.characters.map(character => (
           <CharacterCard

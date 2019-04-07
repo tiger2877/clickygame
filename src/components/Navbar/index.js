@@ -6,11 +6,9 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav class="navbar">
+      <nav className="navbar">
         <div>{this.props.comment}</div>
-        <div> Score: {this.props.currentScore}</div>
-        <div>|</div>
-        <div>Total Score: {this.props.highScore}</div>
+        <div> Score: {this.props.currentScore} | Total Score: {this.props.highScore}</div>
       </nav>
     );
   }

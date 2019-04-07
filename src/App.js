@@ -62,6 +62,13 @@ class App extends Component {
     return (
 
       <Wrapper>
+      <Navbar 
+          currentScore={this.currentScore}
+          highScore={this.highScore}
+          comment={this.comment}
+          sortImages={this.resetGame}
+      />
+
         {this.state.characters.map(character => (
           <CharacterCard
             handleClick={this.handleClick}

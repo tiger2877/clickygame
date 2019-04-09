@@ -53,7 +53,7 @@ class App extends Component {
         };
       }
     });
-    console.log("hi");
+    // console.log("this works");
   };
 
   // Map over this.state.characters and render a CharacterCard component for each character object

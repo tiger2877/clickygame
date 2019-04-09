@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CharacterCard from "./components/CharacterCard";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import Wrapper from "./components/Wrapper";
 import characters from "./characters.json";
 import "./App.css";
@@ -53,22 +53,18 @@ class App extends Component {
         };
       }
     });
+    console.log("hi");
   };
 
   // Map over this.state.characters and render a CharacterCard component for each character object
   render() {
-   console.log(this.props);
-
     return (
-
-      <Wrapper>
-      <Navbar 
-          currentScore={this.currentScore}
-          highScore={this.highScore}
-          comment={this.comment}
-          sortImages={this.resetGame}
+      <React.Fragment>
+      <NavBar 
+       currentScore = {this.state.currentScore}
+       highScore = {this.state.highScore}
       />
-
+      <Wrapper>
         {this.state.characters.map(character => (
           <CharacterCard
             handleClick={this.handleClick}
@@ -78,6 +74,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+      </React.Fragment>
     );
   }
 }

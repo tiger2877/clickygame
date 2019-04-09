@@ -1,17 +1,14 @@
 import React from "react";
-import {Component} from "react";
 import "./style.css";
 
-class Navbar extends Component {
+function NavBar(props) {
 
-  render() {
     return (
-      <nav className="navbar">
-        <div>{this.props.comment}</div>
-        <div> Score: {this.props.currentScore} | Total Score: {this.props.highScore}</div>
+      <nav className="navbar navbar-light bg-light">
+        <div>{props.comment}</div>
+        <div> Score: {props.currentScore} | Total Score: {props.highScore}</div>
       </nav>
     );
   }
-}
 
-export default Navbar;
+export default NavBar;

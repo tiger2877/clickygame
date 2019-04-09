@@ -8,7 +8,7 @@ import "./App.css";
 const shuffleCard = characters => characters.sort(() => Math.random() - 0.5);
 class App extends Component {
  
-  // Setting this.state.characters to the characters json array
+  // Setting the state for our functions
   state = {
     characters,
     cards: characters[Math.round(Math.random())],
@@ -18,6 +18,7 @@ class App extends Component {
  
   };
 
+  //function to reset game
   resetGame = () => {
     this.setState(prevState => {
       const newSet = prevState.character;
@@ -31,6 +32,7 @@ class App extends Component {
     });
   };
 
+  //function to handle on click
   handleClick= id => {
 
     const sortedImages = shuffleCard(this.state.characters);

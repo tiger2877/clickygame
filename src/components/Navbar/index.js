@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+//stateless function for our navbar...
 function NavBar(props) {
 
     return (

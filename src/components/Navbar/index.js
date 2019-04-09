@@ -6,7 +6,7 @@ function NavBar(props) {
     return (
       <nav className="navbar navbar-light bg-light">
         <div>{props.comment}</div>
-        <div> Score: {props.currentScore} | Total Score: {props.highScore}</div>
+        <div> Your Score: {props.currentScore} | Highest Score: {props.highScore}</div>
       </nav>
     );
   }

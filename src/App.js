@@ -15,7 +15,7 @@ class App extends Component {
     clickedImages: [],
     currentScore: 0,
     highScore: 0,
-    comment: 'Click an image to start',
+ 
   };
 
   resetGame = () => {
@@ -26,7 +26,7 @@ class App extends Component {
         clickedImages: [],
         currentScore: 0,
         highScore: prevState.highScore,
-        comment: 'Click an image to start',
+       
       };
     });
   };
@@ -41,7 +41,7 @@ class App extends Component {
           clickedImages: [...prevState.clickedImages, id],
           currentScore: prevState.currentScore + 1,
           highScore: prevState.highScore < prevState.currentScore + 1 ? prevState.highScore + 1 : prevState.highScore,
-          comment: 'Correct!',
+       
         };
       } else {
         return {
@@ -49,7 +49,7 @@ class App extends Component {
           clickedImages: [],
           currentScore: 0,
           highScore: prevState.highScore,
-          comment: 'Click an image to start',
+         
         };
       }
     });

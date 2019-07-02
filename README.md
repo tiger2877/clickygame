@@ -2,7 +2,7 @@
 
 ## Overview
 
-Thhis application will render different images to the screen. Each image should listen for click events.
+This application will render different images to the screen. Each image should listen for click events.
 It will also keep track of the user's score. 
 The user's score will be incremented when clicking an image for the first time. 
 The user's score should be reset to 0 if they click the same image more than once.
